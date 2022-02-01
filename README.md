@@ -46,6 +46,7 @@ This is out of the initial task scope, however I consider these steps as necessa
 - Creative development
     - Animation of the 3D logos of Tendermint and its family companies (need 3D models -> I only found the Ethereum logo on creative commons)
     - For better perfomance, the webgl part should be dispatch across components and shoud run one unique background renderer instead of one renderer by component (here heroe section). But to pursue this logic the developper needs to have all the specification regarding the page/website/websites. This architecture has a potential to be very modular (even outside of Nuxt)
+    - Better code organisation in the canvas compoments
     - Creation and animation of the 3D octogonal design representing apps
     - More visual and animated interactions between blockchains and industries
     - More Easing on threejs animation
