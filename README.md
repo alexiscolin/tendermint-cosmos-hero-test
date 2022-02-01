@@ -56,5 +56,5 @@ This is out of the initial task scope, however I consider these steps as necessa
     - Navigation menu on mobile (not included in the provided mockups)
     - Accessibility state changes
 - Message and goal
-    - Iteration with the team over the ultimate message to convey on the scene
+    - Iteration with the team over the ultimate message to convey visually on the scene
 - Typescript (I chose to spend time on the 3D instead)
