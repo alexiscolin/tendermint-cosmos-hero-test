@@ -53,6 +53,8 @@ This is out of the initial task scope, however I consider these steps as necessa
     - Creating stars background in 3D in order to add depth to the scene
     - RAM optimization / loading speed for Threejs (Material creation, loader feedback,dispose of materials on destroy, merge geometries )
     - Animation on mobile (gyroscope)
+    - Navigation menu on mobile (not included in the provided mockups)
+    - Accessibility state changes
 - Message and goal
     - Iteration with the team over the ultimate message to convey on the scene
 - Typescript (I chose to spend time on the 3D instead)
