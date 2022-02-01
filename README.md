@@ -17,53 +17,42 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+## What was done in 4-hour time
 
-## Special Directories
+- Nuxt setup
+- Threejs animation (basics)
+- Page integration
+    - Tailwind CSS + PostCSS (utility-first framework -> component friendly)
+    - Nuxt components architecture
+    - Responsive
+- Testing on major browsers & devices
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+## What was done in extra time
 
-### `assets`
+This is out of the initial task scope, however I consider these steps as necessary to deliver actionable work for Tendermint.
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+- Selection of the scene to recreate in the Cosmos video
+- Preparatory work for integration on Figma mock-ups
+    - Grid placement
+    - Breakpoint review
+    - Font rationalization
+- Advanced Nuxt logic for modularity (eg header sub-components) across Tendermint websites and its family sites
+- Reveal animations & transitions
+- Threejs easing on "mousemove" event
+- Threejs asset management
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+## What could have been done with more time/creative assets
 
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
-
+- Creative development
+    - Animation of the 3D logos of Tendermint and its family companies (need 3D models)
+    - For better perfomance, the webgl part should be dispatch across components and shoud run one unique background renderer instead of one renderer by component (here heroe section). But to pursue this logic the developper needs to have all the specification regarding the page/website/websites. This architecture has a potential to be very modular (even outside of Nuxt)
+    - Creation and animation of the 3D octogonal design representing apps
+    - More visual and animated interactions between blockchains and industries
+    - More Easing on threejs animation
+    - Glowing effect through the planets (postprocessing)
+    - Creating stars background in 3D in order to add depth to the scene
+    - RAM optimization / loading speed for Threejs (Material creation, loader feedback,dispose of materials on destroy, merge geometries )
+    - Animation on mobile (gyroscope)
+- Message and goal
+    - Iteration with the team over the ultimate message to convey on the scene
+- Typescript (I chose to spend time on the 3D instead)
