@@ -48,6 +48,7 @@ This is out of the initial task scope, however I consider these steps as necessa
     - For better perfomance, the webgl part should be dispatch across components and shoud run one unique background renderer instead of one renderer by component (here heroe section). But to pursue this logic the developper needs to have all the specification regarding the page/website/websites. This architecture has a potential to be very modular (even outside of Nuxt)
     - Better code organisation in the canvas compoments
     - Creation and animation of the 3D octogonal design representing apps
+    - Organic alpha texture creation (atmospheres and clouds simulation) instead of the linear one
     - More visual and animated interactions between blockchains and industries
     - More Easing on threejs animation
     - Fluid typography
