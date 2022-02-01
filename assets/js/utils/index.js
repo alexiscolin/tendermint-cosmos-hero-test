@@ -1,5 +1,5 @@
 export { throttle } from './throttle'
 export { getMousePos } from './mousePos'
-export { calcWinsize } from './calcWinSize'
+export { calcWinsize } from './calcWinsize'
 export { shadeColor } from './shadeColor'
 export { clearRequestInterval, requestInterval } from './requestInterval'
