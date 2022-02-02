@@ -80,13 +80,16 @@ export default {
     // init Scene
     this.init()
 
-    // Light (ambiant & direct -> better for perf during animation)
+    // Light (ambiant & point & direct -> better for perf during animation)
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.4)
     this.scene.add(ambientLight)
 
     const directionalLight = new THREE.DirectionalLight(0xffffff, 1)
     directionalLight.position.set(1, 0.25, 0)
     this.scene.add(directionalLight)
+
+    const pointLight = new THREE.PointLight(0x0000ff, 1)
+    this.scene.add(pointLight)
 
     // Texture (alpha)
     const alphaMap = new THREE.TextureLoader(this.loadingManager).load(
@@ -247,7 +250,6 @@ export default {
 
       // add the canvas to the DOM
       this.canvas = this.renderer.domElement
-      this.canvas.classList.add('dom-gl')
       this.$refs.canvas.appendChild(this.canvas)
 
       // first renderer
@@ -376,3 +378,22 @@ export default {
   },
 }
 </script>
+
+<style lang="postcss" scoped>
+.dom-gl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: -10% 0;
+  background-image: radial-gradient(
+    ellipse at 46% 47%,
+    #006eff98 0%,
+    rgba(14 22 60 / 50%) 30%,
+    rgba(14 22 60/ 0%) 60%
+  );
+}
+</style>

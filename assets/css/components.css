@@ -26,13 +26,4 @@
     .container {
         @apply max-w-screen-xl m-auto px-6 m:px-16;
     }
-
-    .dom-gl {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-    }
 } 

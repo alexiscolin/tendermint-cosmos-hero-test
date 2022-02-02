@@ -112,4 +112,8 @@ export default {
 .heroe-illu_content {
   @apply relative pb-[100%] sm:pb-0 w-[var(--illu-content-size-old)] w-[var(--illu-content-size)] h-[var(--illu-content-size-old)] h-[var(--illu-content-size)];
 }
+
+.heroe-illu_content::v-deep .dom-gl {
+  @apply bg-[length:var(--illu-content-size)_var(--illu-content-size)];
+}
 </style>
