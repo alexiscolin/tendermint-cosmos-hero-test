@@ -29,7 +29,7 @@ const pathMat = new THREE.MeshStandardMaterial({
 })
 
 export default {
-  name: 'SectionHeroeCanvas',
+  name: 'SectionIntroCanvas',
   data() {
     return {
       canvas: '',

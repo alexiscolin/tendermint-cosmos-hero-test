@@ -1,11 +1,11 @@
 <template>
-  <section class="heroe">
+  <section class="hero">
     <div
       class="container relative min-h-screen grid grid-cols-12 grid-rows-1 items-center text-center sm:text-left"
     >
-      <div class="heroe-illu">
-        <div id="heroe-canvas" class="heroe-illu_content">
-          <SectionHeroeCanvas />
+      <div class="hero-illu">
+        <div id="hero-canvas" class="hero-illu_content">
+          <SectionIntroCanvas />
         </div>
       </div>
 
@@ -49,7 +49,7 @@ export default {
       delay: 0.7,
     })
 
-    gsap.from('.heroe', {
+    gsap.from('.hero', {
       '--scale-size': 2,
       duration: 2.4,
       ease: 'expo.out',
@@ -60,7 +60,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.heroe {
+.hero {
   position: relative;
   overflow: hidden;
 
@@ -77,7 +77,7 @@ export default {
   --scale-size: 1;
 }
 
-.heroe::before {
+.hero::before {
   content: '';
   position: absolute;
   display: block;
@@ -89,15 +89,15 @@ export default {
   @apply bg-cover bg-center bg-repeat;
 }
 
-.avif .heroe::before {
+.avif .hero::before {
   background-image: url('/imgs/header-bg/header-bg.avif');
 }
 
-.webp .heroe::before {
+.webp .hero::before {
   background-image: url('/imgs/header-bg/header-bg.webp');
 }
 
-.old .heroe::before {
+.old .hero::before {
   background-image: url('/imgs/header-bg/header-bg.jpg');
   background-image: image-set(
     url('/imgs/header-bg/header-bg.jpg') 1x,
@@ -105,15 +105,15 @@ export default {
   );
 }
 
-.heroe-illu {
+.hero-illu {
   @apply absolute w-full sm:w-auto px-6 sm:px-0 sm:right-[var(--illu-content-x)] mt-5 sm:m-0 sm:absolute top-20 sm:top-1/2 sm:-translate-y-1/2 z-0 z-0;
 }
 
-.heroe-illu_content {
+.hero-illu_content {
   @apply relative pb-[100%] sm:pb-0 w-[var(--illu-content-size-old)] w-[var(--illu-content-size)] h-[var(--illu-content-size-old)] h-[var(--illu-content-size)];
 }
 
-.heroe-illu_content::v-deep .dom-gl {
+.hero-illu_content::v-deep .dom-gl {
   @apply bg-[length:var(--illu-content-size)_var(--illu-content-size)];
 }
 </style>
