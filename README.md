@@ -1,6 +1,8 @@
 # cosmos-intro-test
 
-## Build Setup
+[cosmos-hero](https://user-images.githubusercontent.com/7622257/171153821-2b1b8261-378c-47ae-8dee-c7ecba25bb69.png)
+
+## Build Setup!
 
 ```bash
 # install dependencies
