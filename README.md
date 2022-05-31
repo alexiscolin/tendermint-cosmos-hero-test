@@ -1,6 +1,6 @@
 # cosmos-intro-test
 
-[cosmos-hero](https://user-images.githubusercontent.com/7622257/171153821-2b1b8261-378c-47ae-8dee-c7ecba25bb69.png)
+![cosmos-hero](https://user-images.githubusercontent.com/7622257/171153821-2b1b8261-378c-47ae-8dee-c7ecba25bb69.png)
 
 ## Build Setup!
 
